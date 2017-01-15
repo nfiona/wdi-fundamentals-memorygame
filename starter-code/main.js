@@ -4,10 +4,40 @@ var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
 
-if (cardOne === cardTwo) { 
-	alert('You found a match!');
-} else if (cardThree === cardFour) {
-	alert('You found a match!');
-} else {
-	alert('Sorry, try again.');
+
+var element = document.getElementById('game-board');
+
+for (var i = 0; i < 4; i++) {
+	var divElement = document.createElement('Div');
+	divElement.className = ("card");
+element.appendChild(divElement);
 }
+
+function createCards (x) {
+	var element = document.getElementById('game-board');
+
+for (var i = 0; i < 4; i++) {
+	var divElement = document.createElement('Div');
+	divElement.className = ("card");
+element.appendChild(divElement);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
